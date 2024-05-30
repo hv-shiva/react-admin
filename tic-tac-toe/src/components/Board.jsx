@@ -2,8 +2,7 @@ import { useState } from "react";
 import Square from "./Square";
 import calculateWinner from "../CalculateWinner";
 
-export default function Board({xIsNext, squares, onPlay}) {
-
+export default function Board({ xIsNext, squares, onPlay }) {
   function handleClick(index) {
     if (squares[index] || calculateWinner(squares)) {
       return;
