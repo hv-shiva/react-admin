@@ -23,6 +23,7 @@ export default function TicTacToe() {
   //console.log("square: ", square);
   
   const winner = calculateWinner(squares);
+  console.log("winner: ", winner);
   let status;
   if (winner) {
     status = "Winner: " + winner;
